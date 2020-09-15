@@ -1,0 +1,32 @@
+{
+  "name": "todolist",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body": "^5.1.0",
+    "concurrently": "^3.6.1",
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "jest-cli": "^26.4.2",
+    "mongoose": "^5.10.5",
+    "parser": "^0.1.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^5.1.2",
+    "react-scripts": "^1.1.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postinstall": "npm install --prefix backend",
+    "start": "concurrently \"cd backend && npm start\" \"cd ./ && npm run dev \" "
+  },
+  "proxy": "http://localhost:8080"
+}
